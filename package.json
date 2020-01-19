@@ -1,14 +1,19 @@
 {
-  "name": "vue-cli3-component",
-  "version": "0.1.0",
-  "private": true,
+  "name": "colorselect",
+  "version": "0.1.4",
+  "private": false,
+  "description": "基于 Vue 的颜色选择器",
+  "keyword": "colorselect",
+  "main": "lib/colorselect.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name colorselect --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.4.4",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "widget-demo": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
